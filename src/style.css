@@ -19,7 +19,7 @@ header {
   background-color: whitesmoke;
 }
 .logo {
-  padding: 
+  padding: 2vh;
 }
 nav {
 
@@ -38,7 +38,7 @@ li {
 }
 
 .hero {
-    background-image: url(img/taxi.jpg);
+    background-image: url(/Users/Marce/Desktop/Labcar/recursos/img/taxi.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
