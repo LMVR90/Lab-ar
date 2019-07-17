@@ -7,26 +7,41 @@
     </head>
     <body>       
         <header>
-            <figure class="logo">
-                <a href="#">
-                    <img src="/Users/Marce/Desktop/Labcar/recursos/img/logo.png" alt="Labcar-logo">
-                </a>
-            </figure>
-            <nav class="menu">
+            <div class="container">
+                <figure class="logo">
+                    <a href="#">
+                        <img src="/Users/Marce/Desktop/Labcar/recursos/img/logo.png" alt="Labcar-logo">
+                    </a>
+                </figure>
+            </div>  
+            <nav id="menu" class="menu">
                 <ul>
-                    <li><a href="#" class="link">Viaja</a></li>
-                    <li><a href="#" class="link">Conduce</a></li>
-                    <li><a href="#" class="link">Inicia sesión</a></li>
+                    <li><a href="#" class="link" :hover>Viaja</a></li>
+                    <li><a href="#" class="link" :hover>Conduce</a></li>
+                    <li><a href="#" class="link" :hover>Inicia sesión</a></li>
                 </ul> 
             </nav>
         </header>
+        <div class="menu-toggle">
+            <div class="hamburguer">
+
+            </div>
+        </div>
         <main>
             <section name="hero" class="hero">
-                <div>
-                    
-                </div>
+                <article>
+                    <div>
+                        <h1>Comienza a viajar con</h1>
+                    </div>
+                    <figure>
+                        <img src="/Users/Marce/Desktop/Labcar/recursos/img/logo-blanco.png" alt="Labcar">
+                    </figure>
+                    <button class="button">Descargar el app</button>
+                </article>
             </section>
-            <section name="informacion"></section>
+            <section name="informacion" class="informacion">
+
+            </section>
             <section name="conductor"></section>
             <section name="tarifa"></section>
         </main>
