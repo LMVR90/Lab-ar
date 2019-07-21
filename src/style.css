@@ -4,84 +4,17 @@
     padding: 0;
   }
 
-.menu {
-    display: flex;
-    height: inherit;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    top: 100%;
-    left: 0;
-  }
-
-header {
-  display: flex;
-  height: 20vh;
-  width: 100%;
-  top: 0;
-  background-color: white;
-  position: relative;
-  padding: 1vh 0;
-}
-
-.logo {
-  padding: 2vh;
-}
-
-.container {
-  width: 95%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  border-bottom: 1px solid gray;
-}
-
-.menu a{
-  color: black;
-  text-decoration: none;
-  text-align: center;
-}
-
-.menu a:hover,
-.menu a:focus{
-  background:gray;
-  color: white;
-}
-
-.hero {
-    background-image: url(/Users/Marce/Desktop/Labcar/recursos/img/taxi.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-attachment: fixed;
-    height: 100vh;
-    max-width: 100%;
-    align-items: center;
-    display: flex;    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  }
-
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?lwlfc0');
-    src:  url('../fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?lwlfc0') format('truetype'),
-      url('../fonts/icomoon.woff?lwlfc0') format('woff'),
-      url('../fonts/icomoon.svg?lwlfc0#icomoon') format('svg');
+    src:  url('/Users/Marce/Desktop/Labcar/recursos/iconos/fonts/icomoon.eot');
+    src:  url('/Users/Marce/Desktop/Labcar/recursos/iconos/fonts/icomoon.eot') format('embedded-opentype'),
+      url('/Users/Marce/Desktop/Labcar/recursos/iconos/fonts/icomoon.ttf') format('truetype'),
+      url('/Users/Marce/Desktop/Labcar/recursos/iconos/fonts/icomoon.woff') format('woff'),
+      url('/Users/Marce/Desktop/Labcar/recursos/iconos/fonts/icomoon.svg') format('svg');
     font-weight: normal;
     font-style: normal;
   }
-  
+
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
@@ -112,3 +45,308 @@ header {
   .icon-linkedin2:before {
     content: "\eaca";
   }
+
+.menu {
+    display: flex;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    top: 100%;
+    left: 0;
+  }
+
+header {
+  display: flex;
+  height: 15vh;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  position: relative;
+  padding: 1vh 0;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 60%;
+  height: 30%;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid gray;
+}
+
+.menu a{
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu a:hover,
+.menu a:focus{
+  background:gray;
+  color: white;
+}
+
+.menu-toggle {
+  padding: 1vh;
+  top: 2vh;
+  left: 1vh;
+  background: gray;
+  position: absolute;
+}
+
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after {
+  content: '';
+  display: block;
+  background: white;
+  height: 6vh;
+  width: 3vh;
+}
+
+.hero {
+    background-image: url('/Users/Marce/Desktop/Labcar/recursos/img/taxi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: scroll;
+    height: 55vh;
+    max-width: 100%;
+    align-items: center;
+    display: flex;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+
+.text-hero{
+  background-color: #f7b617;
+  color: white;
+  padding: 4vh;
+}
+
+.button-hero-1{
+  color: black;
+  background-color: white;
+  padding: 1vh;
+  border-radius: 1.5vh;  
+}
+
+.informacion{
+    background-color: #f7b617;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 60vh;
+    max-width: 100%;
+    display: flex;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4vh 1vh 1vh 1vh;
+}
+
+.celular{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.celular img{
+  height: 60%;
+  width: 65%;
+}
+
+.text-celular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: 0;
+  border: .1vh white solid;
+  align-content: center;
+  padding: 3vh;
+}
+
+.text-celular div {
+  text-align: center;
+}
+
+.text-informacion{
+  font-family: 'icomoon';
+  color: white;
+  font-size: 1rem;
+}
+
+.text-informacion-bottom {
+  justify-self: flex-start;
+}
+
+.conductor {
+  background-image: url('/Users/Marce/Desktop/Labcar/recursos/img/conduce.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  height: 45vh;
+  max-width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  flex-direction: column;
+  padding: 10vh 3vh 20vh 3vh;
+  align-items: center;
+  display: flex;
+  filter: brightness(.5);
+}
+
+.text-conductor {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "icomoon";
+  font-size: .7rem;
+}
+
+.button-conductor-1 {
+  background-color: #f7b617;
+  color: white;
+  padding: 1vh;
+  border: 0;
+  border-radius: 1vh;
+  width: 27vh;
+  height: 5vh;
+}
+
+.tarifa {
+  background-color: #f7b617;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  flex-direction: column;
+  padding: 10vh 3vh 5vh 3vh;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.text-tarifa {
+  color: white;
+  line-height: 5vh;
+}
+
+.icons-tarifa {
+  padding: 2vh;
+}
+
+.map-tarifa {
+  width: 50vh;
+  height: 30vh;
+  border: .1vh white solid;
+  display: flex;
+  align-self: center;
+}
+
+.button-tarifa-div {
+  top: 0;
+  align-self: center;
+}
+
+.button-tarifa {
+  background-color: white;
+  border-radius: .5vh;
+  width: 20vh;
+  height: 5vh;
+  padding: 1vh;
+  border: 0;
+}
+
+.inputs-tarifa input{
+  background: none;
+  width: 35vh;
+  height: 5vh;
+  border: white solid .1vh;
+  border-radius: 1vh;
+}
+.icons-tarifa {
+  height: 6.5vh;
+  width: 6.5vh;
+}
+
+.footer {
+  background-color: #2b2b2b ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 50vh;
+  max-width: 100%;
+  display: flex;    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  flex-direction: column;
+  padding: 2vh;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo-footer {
+ padding-bottom: 1vh;
+  border-bottom: solid white .1vh;
+}
+
+.logo-footer img {
+  height: 13%;
+  width: 26%;
+}
+.info-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links-footer {
+  padding: 3vh 0 3vh 0;
+  line-height: .8rem;
+}
+
+.links-footer p {
+  font-size: .6rem;
+}
+
+.stores-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button-footer {
+  width: 60%;
+  height: 30%;
+}
+
+.name-footer {
+  padding-top: 3vh;
+  padding-bottom: 0vh;
+  border-top: solid white .1vh;
+  font-family: "icomoon";
+  font-size: .6rem;
+}
+
+
+

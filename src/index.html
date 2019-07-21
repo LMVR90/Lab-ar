@@ -6,14 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>       
-        <header>
-            <div class="container">
-                <figure class="logo">
-                    <a href="#">
-                        <img src="/Users/Marce/Desktop/Labcar/recursos/img/logo.png" alt="Labcar-logo">
-                    </a>
-                </figure>
-            </div>  
+        <header> 
             <nav id="menu" class="menu">
                 <ul>
                     <li><a href="#" class="link" :hover>Viaja</a></li>
@@ -21,31 +14,118 @@
                     <li><a href="#" class="link" :hover>Inicia sesión</a></li>
                 </ul> 
             </nav>
-        </header>
-        <div class="menu-toggle">
-            <div class="hamburguer">
-
+            <figure>
+                <a href="#">
+                    <img class="logo" src="/Users/Marce/Desktop/Labcar/recursos/img/logo.png" alt="Labcar-logo">
+                </a>
+            </figure>
+            <div class="menu-toggle">
+                <div class="hamburguer"></div>
             </div>
-        </div>
+        </header>
         <main>
             <section name="hero" class="hero">
-                <article>
+                <div class="text-hero">
                     <div>
-                        <h1>Comienza a viajar con</h1>
+                        <h1>Comienza a viajar
+                            <br>con
+                        </h1>
                     </div>
                     <figure>
                         <img src="/Users/Marce/Desktop/Labcar/recursos/img/logo-blanco.png" alt="Labcar">
                     </figure>
-                    <button class="button">Descargar el app</button>
-                </article>
+                    <button class="button-hero-1">Descargar el app</button>
+                </div>
             </section>
             <section name="informacion" class="informacion">
-
+                <div class="text-celular">
+                    <div>
+                        <h2 class="text-informacion">La nueva app</h2>
+                    </div>
+                    <br>               
+                    <figure class="celular">
+                        <img src="/Users/Marce/Desktop/Labcar/recursos/img/celular.png" alt="celular">
+                    </figure>
+                </div>  
+                <div>
+                    <p class="text-informacion">Llega a tu destino aún más rápido</p>
+                </div>                    
             </section>
-            <section name="conductor"></section>
-            <section name="tarifa"></section>
+            <section name="conductor" class="conductor">
+                <div class="text-conductor">
+                    <div><h3>Conduce cuando quieras</h3></div>
+                    <br>
+                    <div><p>LabCar es una opción flexible para alcanzar tus metas financieras.</p></div>
+                    <br>
+                    <button class="button-conductor-1">Conviértete en conductor</button>
+                </div>
+            </section>    
+            <section name="tarifa" class="tarifa">
+                <div class="text-tarifa">
+                    <h4>Tarifas</h4>
+                    <p>Consulta las tarifas LabCar aquí</p>
+                    <div class="inputs-tarifa">                       
+                        <form action="">
+                            <span class="icon"><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/circulo.png" alt="Circulo"></span> <input class="input-tarifa" type="text" placeholder="" value="">
+                        </form>                
+                        <form action="">
+                            <span><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/flecha.png" alt="Flecha"></span> <input class="input-tarifa" type="text" placeholder="" value="">
+                        </form>
+                    </div>
+                </div>
+                <div class="button-tarifa-div"><button class="button-tarifa">¡TRAZAR RUTA!</button></div>
+                <div class="map-tarifa">
+                    <div id="map-tarifa"></div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="logo-footer">
+                <figure>
+                    <img src="/Users/Marce/Desktop/Labcar/recursos/img/logo-blanco.png" alt="Labcar">
+                </figure>
+            </div>
+            <div class="info-footer">
+                <div class="left-footer links-footer">
+                    <p>Viaja
+                    <br>
+                    <br>
+                    Conduce
+                    <br>
+                    <br>
+                    Ciudades
+                    <br>
+                    <br>
+                    Tarifas
+                    <br>
+                    <br>
+                    Entregas
+                    <br>
+                    <br>
+                    Cómo funciona?
+                    <br>
+                    <br>
+                    Países
+                    <br>
+                    <br>
+                    Seguridad</p>
+                </div>
+                <div class="right-footer">
+                    <div class="social-footer">
+                        <img src="" alt="">
+                    </div>
+                    <div class="stores-footer">
+                        <button><img class="button-footer" src="/Users/Marce/Desktop/Labcar/recursos/img/google-play.png" alt=""></button>
+                        <button><img class="button-footer" src="/Users/Marce/Desktop/Labcar/recursos/img/app-store.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="name-footer">
+                © 2017 LabCar technologies Inc.
+            </div>
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>
+
+
