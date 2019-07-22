@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Labcar</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f5f7cbca24.js"></script>
     </head>
     <body>       
         <header>
-            <a href="#main-menu"
-            class="menu-toggle"
-            id="main-menu-toggle"
-            aria-label="Open main menu">
+            <a href="#main-menu" class="menu-toggle" id="main-menu-toggle" aria-label="Open main menu">
                 <span class="sr-only">Open main menu</span>
                 <span class="fas fa-bars" aria-hidden="true"></span>
             </a>
@@ -18,11 +18,7 @@
                 <img class="logo" src="/Users/Marce/Desktop/Labcar/recursos/img/logo.png" alt="Labcar-logo">
             </figure>
             <nav id="main-menu" class="main-menu" aria-label="Main menu">
-                <a href="#main-menu-toggle"
-                class="menu-close"
-                id="main-menu-close"
-                aria-label="Close main menu"
-                >
+                <a href="#main-menu-toggle" class="menu-close" id="main-menu-close" aria-label="Close main menu">
                     <span class="sr-only">Close main menu</span>
                     <span class="fas fa-times" aria-hidden="true"></span>
                 </a>
@@ -32,10 +28,7 @@
                     <li><a href="#modalIniciaSesion">Inicia sesión</a></li>
                 </ul>
             </nav>
-            <a href="#main-menu-toggle"
-            class="backdrop" 
-            tabindex="-1"
-            aria-hidden="true" hidden></a>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
             <div id="modalIniciaSesion" class="modalIniciaSesion">
                 <div class="contentModalIniciaSesion">
                     <div class="arriba-IniciaSesion">
@@ -104,7 +97,7 @@
                 </div>
                 <div class="button-tarifa-div"><button class="button-tarifa">¡TRAZAR RUTA!</button></div>
                 <div class="map-tarifa">
-                    <div id="map-tarifa"></div>
+                    <iframe src="" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </section>
         </main>
@@ -116,32 +109,26 @@
             </div>
             <div class="info-footer">
                 <div class="left-footer links-footer">
-                    <p>Viaja
-                    <br>
-                    <br>
-                    Conduce
-                    <br>
-                    <br>
-                    Ciudades
-                    <br>
-                    <br>
-                    Tarifas
-                    <br>
-                    <br>
-                    Entregas
-                    <br>
-                    <br>
-                    Cómo funciona?
-                    <br>
-                    <br>
-                    Países
-                    <br>
-                    <br>
-                    Seguridad</p>
+                    <ul>
+                        <li>Viaja</li>
+                        <li>Conduce</li>
+                        <li>Ciudades</li>
+                        <li>Tarifas</li>
+                        <li>Entregas</li>
+                        <li>Cómo funciona?</li>
+                        <li>Países</li>
+                        <li>Seguridad</li>
+                    </ul>
                 </div>
                 <div class="right-footer">
                     <div class="social-footer">
-                        <img src="" alt="">
+                        <nav>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-apple"></i>
+                            <i class="fas fa-play"></i>
+                        </nav>                        
                     </div>
                     <br>
                     <div class="stores-footer">
@@ -155,7 +142,6 @@
                 © 2017 LabCar technologies Inc.
             </div>
         </footer>
-        <script src="https://kit.fontawesome.com/f5f7cbca24.js"></script>
         <script src="index.js"></script>
         
     </body>

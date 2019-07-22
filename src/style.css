@@ -14,9 +14,8 @@
   font-style: normal;
 }
 
-
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
+    /* use !important to prevent issues with browser extensions that change fonts*/
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
@@ -25,7 +24,7 @@
     text-transform: none;
     line-height: 1;
   
-    /* Better Font Rendering =========== */
+    /* Better Font Rendering ===========*/
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -46,6 +45,9 @@
     content: "\eaca";
   }
 
+body {
+  font-family: sans-serif;
+}
 
 header {
     padding: 2vh 1vh 8vh 1vh;
@@ -180,6 +182,7 @@ header {
     height: 55vh;
     max-width: 100%;
     align-items: center;
+    justify-content: flex-end;
     display: flex;    
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -285,7 +288,7 @@ header {
   padding: 3vh;
   width: 10wh;
   height: 30vh;
-  font-size: 1rem;
+  font-size: .9rem;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -357,7 +360,6 @@ header {
 }
 
 .text-informacion{
-  font-family: 'icomoon' sans-serif;
   color: white;
   font-size: 1rem;
 }
@@ -388,7 +390,6 @@ header {
   display: flex;
   flex-direction: column;
   color: white;
-  font-family: "icomoon" sans-serif;
   font-size: .7rem;
 }
 
@@ -494,11 +495,12 @@ header {
 
 .links-footer {
   padding: 3vh 0 3vh 0;
-  line-height: .8rem;
 }
 
-.links-footer p {
+.links-footer li {
   font-size: .6rem;
+  list-style: none;
+  line-height: 1rem;
 }
 
 .right-footer {
@@ -507,6 +509,13 @@ header {
   justify-content: center;
   align-content: flex-start;
 }
+
+.social-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .stores-footer {
   display: flex;
   flex-direction: column;
@@ -523,11 +532,13 @@ header {
   padding-top: 3vh;
   padding-bottom: 0vh;
   border-top: solid white .1vh;
-  font-family: "icomoon" sans-serif;
   font-size: .6rem;
 }
 
-@media screen ()
+@media (min-width: 601px) {
+
+
+}
 
 
 
