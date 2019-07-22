@@ -231,19 +231,22 @@ header {
   z-index: 99999999;
 }
 
+.closeModalIniciaSesion{
+  position: relative;
+  padding: 1vh;
+}
+
+.arriba-IniciaSesion{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: solid white .1vh;
+}
 .arriba-IniciaSesion img {
   height: 30%;
   width: 30%;
   padding: 3vh 0 3vh 0;
   margin: 0;
-}
-.closeModalIniciaSesion{
-  position: absolute;
-  padding: 1vh;
-}
-.closeModalIniciaSesion :hover {
-  background-color: gray;
-  color: white;
 }
 
 .modalIniciaSesion:target {
@@ -300,7 +303,6 @@ header {
   width: 30vw;
   margin: 2vh;
   color: white;
-  border-radius: 3px;
 }
 
 .boxIniciaSesion .click-here {
@@ -593,7 +595,62 @@ header {
     background: none; /* Remove background from off-canvas styling */
     color: #f7b617;
   }
+  
+  .modalIniciaSesion .contentModalIniciaSesion {
+    width: auto;
+    max-width: 80vw;
+    height: auto;
+    margin-left: -80vw;
+    margin-top: -20vh;
+    top: -100vh;
+    position: fixed;
+    transition: top 0.35s ease;
+    background-color: #52AD9D;
+    box-shadow: 0 1vh 2vh rgba(0,0,0,0.1);
+    border-radius: 3px;
+    z-index: 99999999;
+  }
+  
+  .arriba-IniciaSesion img {
+    height: 20%;
+    width: 20%;
+    padding: 5vh 0;
+    margin: 0;
+  }
 
+  .arriba-IniciaSesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: solid white .1vh;
+  }
+  
+  .abajo-IniciaSesion{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .boxIniciaSesion {
+    width: 50%;
+    height: 50%;
+  }
+
+  .boxIniciaSesion input {
+    width: auto;
+    padding: auto;
+  }
+
+  .boxIniciaSesion button {
+    background-color: #f7b617;
+    padding: 1vh;
+    height: auto;
+    width: auto;
+    margin: 2vh;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.5rem;
+  }
+  
   .hero {
     height: 100vh;
     width: 100%;
@@ -606,7 +663,7 @@ header {
     display: block;
     color: white;
     background-color: #f7b617;
-    height: 40vh;
+    height: 45vh;
     width: 40vw;
     padding: 3vh;
     line-height: 2rem;
@@ -618,11 +675,12 @@ header {
     text-align: center;
   }
   .hero-desk button {
-    padding: 1vh;
+    padding: 2vh;
     background-color: white;
     border: 0;
-    border-radius: 3px;
+    border-radius: 5px;
     margin: 2vh 0 2vh 0;
+    font-size: 1rem;
   }
   .hero-desk button:hover{
     background-color: #97999B;
@@ -692,6 +750,11 @@ header {
     height: 5vh;
   }
 
+  .button-conductor-1:hover {
+    background-color: white;
+    color: #f7b617;
+  }
+
   .tarifa {
     flex-direction: row;
     justify-content: space-between;
@@ -759,11 +822,6 @@ header {
     padding: 0 2vh;
     justify-content: space-around;
   }
-
-  
-
-
-
 
 }
 
