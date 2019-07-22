@@ -45,6 +45,10 @@
     content: "\eaca";
   }
 
+.hero-desk {
+  display: none;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -159,9 +163,7 @@ header {
   z-index: 998;
   cursor: default;
 }
-.hero-desk {
-  display: none;
-}
+
 .hero {
     background-image: url('/Users/Marce/Desktop/Labcar/recursos/img/taxi.jpg');
     background-size: cover;
@@ -179,6 +181,7 @@ header {
   }
 
 .text-hero{
+  display: block;
   background-color: #f7b617;
   color: white;
   padding: 4vh 10vh 4vh 4vh;
@@ -530,48 +533,67 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .menu-toggle,
-  .main-menu .menu-close {
+  .menu-toggle {
     display:none;
   }
- 
-  .main-menu {
-    display: flex;
-    position: unset;
-    z-index: 1;
-    margin: 0;
-    height: fit-content;
-    width: fit-content;
-    bottom: 0;
-    margin-left: 50vw;
-  }
 
-  .main-menu ul {
-    padding: 0;
+  header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
-  .main-menu a {
+  header figure{
+    align-self: center;
+  }
+
+  .main-menu {
+    position: relative;
+		left: auto;
+		top: auto;
+		height: auto;
+    display: block;
+  }
+  
+  .main-menu ul {
     display: flex;
-    width: 100%;
-    align-items: center;
-    padding: 0 10%;
+    flex-direction: row;
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
   }
-
+  
+  .main-menu a {
+    color: #2b2b2b;
+    border: 0 !important; /* Remove borders from off-canvas styling */
+  }
+  
   .main-menu a:hover,
   .main-menu a:focus {
-    background:  #97999B;
-    color: white;
+    background: none; /* Remove background from off-canvas styling */
+    color: #f7b617;
+  }
+
+  .hero {
+    height: 100vh;
+    width: 100%;
   }
   .text-hero{
     display: none;
   }
+
   .hero-desk {
     display: block;
     color: white;
     background-color: #f7b617;
-    padding: 2vh 4vh 2vh 2vh;
+    height: 40vh;
+    width: 40vw;
+    padding: 3vh;
     line-height: 2rem;
     text-align: left;
   }
@@ -606,9 +628,6 @@ header {
     text-align: center;
   }
 
-  .informacion {
-
-  }
 
 }
 
