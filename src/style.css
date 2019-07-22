@@ -192,8 +192,8 @@ header {
 .text-hero{
   background-color: #f7b617;
   color: white;
-  padding: 4vh;
-  font-size: 1rem;
+  padding: 4vh 10vh 4vh 4vh;
+  font-size: .7rem;
   line-height: 1.5rem;
 }
 
@@ -208,6 +208,7 @@ header {
   background-color: white;
   padding: 1vh;
   border-radius: 1vh; 
+  margin-top: 3vh;
 }
 
 .modalIniciaSesion {
@@ -353,6 +354,7 @@ header {
   border: .1vh white solid;
   align-content: center;
   padding: 3vh;
+  color: white;
 }
 
 .text-celular div {
@@ -361,7 +363,7 @@ header {
 
 .text-informacion{
   color: white;
-  font-size: 1rem;
+  font-size: .7rem;
 }
 
 .text-informacion-bottom {
@@ -430,12 +432,19 @@ header {
   padding: 2vh;
 }
 
-.map-tarifa {
-  width: 80vw;
-  height: 30vh;
+#map {
   border: .1vh white solid;
   display: flex;
   align-self: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 1vh;
+}
+
+.google-maps {
+  height: 30vh;
+  width: 90vw;
 }
 
 .button-tarifa-div {
@@ -535,7 +544,7 @@ header {
   font-size: .6rem;
 }
 
-@media (min-width: 601px) {
+@media only screen and (min-width: 768px) {
 
 
 }
