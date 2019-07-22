@@ -6,30 +6,59 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>       
-        <header> 
-            <nav id="menu" class="menu">
-                <ul>
-                    <li><a href="#" class="link" :hover>Viaja</a></li>
-                    <li><a href="#" class="link" :hover>Conduce</a></li>
-                    <li><a href="#" class="link" :hover>Inicia sesión</a></li>
-                </ul> 
-            </nav>
+        <header>
+            <a href="#main-menu"
+            class="menu-toggle"
+            id="main-menu-toggle"
+            aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <span class="fas fa-bars" aria-hidden="true"></span>
+            </a>
             <figure>
-                <a href="#">
-                    <img class="logo" src="/Users/Marce/Desktop/Labcar/recursos/img/logo.png" alt="Labcar-logo">
-                </a>
+                <img class="logo" src="/Users/Marce/Desktop/Labcar/recursos/img/logo.png" alt="Labcar-logo">
             </figure>
-            <div class="menu-toggle">
-                <div class="hamburguer"></div>
-            </div>
+            <nav id="main-menu" class="main-menu" aria-label="Main menu">
+                <a href="#main-menu-toggle"
+                class="menu-close"
+                id="main-menu-close"
+                aria-label="Close main menu"
+                >
+                    <span class="sr-only">Close main menu</span>
+                    <span class="fas fa-times" aria-hidden="true"></span>
+                </a>
+                <ul>
+                    <li><a href="#">Viaja</a></li>
+                    <li><a href="#">Conduce</a></li>
+                    <li><a href="#modalIniciaSesion">Inicia sesión</a></li>
+                </ul>
+            </nav>
+            <a href="#main-menu-toggle"
+            class="backdrop" 
+            tabindex="-1"
+            aria-hidden="true" hidden></a>
+            <div id="modalIniciaSesion" class="modalIniciaSesion">
+                <div class="contentModalIniciaSesion">
+                    <div class="arriba-IniciaSesion">
+                        <img src="/Users/Marce/Desktop/Labcar/recursos/img/profile-2398782_960_720.png" alt="">
+                        <a href="#" class="closeModalIniciaSesion":hover>X</a>
+                    </div>
+                    <div class="abajo-IniciaSesion">
+                        <div class="boxIniciaSesion">
+                            <span class="fas fa-user-circle">   <input type="text" placeholder="Username" autofocus></span>
+                            <br>
+                            <span class="fas fa-lock">  <input type="text" placeholder="Password"></span>
+                            <button>LOG IN</button>
+                            <p>Forgot password? <span class="click-here">Click here</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>                                           
         </header>
         <main>
             <section name="hero" class="hero">
                 <div class="text-hero">
                     <div>
-                        <h1>Comienza a viajar
-                            <br>con
-                        </h1>
+                        <h1>Comienza a viajar con</h1>
                     </div>
                     <figure>
                         <img src="/Users/Marce/Desktop/Labcar/recursos/img/logo-blanco.png" alt="Labcar">
@@ -66,7 +95,7 @@
                     <p>Consulta las tarifas LabCar aquí</p>
                     <div class="inputs-tarifa">                       
                         <form action="">
-                            <span class="icon"><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/circulo.png" alt="Circulo"></span> <input class="input-tarifa" type="text" placeholder="" value="">
+                            <span><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/circulo.png" alt="Circulo"></span> <input class="input-tarifa" type="text" placeholder="" value="">
                         </form>                
                         <form action="">
                             <span><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/flecha.png" alt="Flecha"></span> <input class="input-tarifa" type="text" placeholder="" value="">
@@ -114,8 +143,10 @@
                     <div class="social-footer">
                         <img src="" alt="">
                     </div>
+                    <br>
                     <div class="stores-footer">
                         <button><img class="button-footer" src="/Users/Marce/Desktop/Labcar/recursos/img/google-play.png" alt=""></button>
+                        <br>
                         <button><img class="button-footer" src="/Users/Marce/Desktop/Labcar/recursos/img/app-store.png" alt=""></button>
                     </div>
                 </div>
@@ -124,7 +155,9 @@
                 © 2017 LabCar technologies Inc.
             </div>
         </footer>
+        <script src="https://kit.fontawesome.com/f5f7cbca24.js"></script>
         <script src="index.js"></script>
+        
     </body>
 </html>
 
