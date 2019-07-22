@@ -307,6 +307,10 @@ header {
   text-decoration: underline;
 }
 
+.desk-info {
+  display: none;
+}
+
 .informacion{
     background-color: #f7b617;
     background-size: cover;
@@ -435,18 +439,27 @@ header {
   width: 90vw;
 }
 
-.button-tarifa-div {
-  top: 0;
-  align-self: center;
+.tarifa-mob {
+  flex-direction: column;
+  justify-content: center;
 }
-
+.button-tarifa-div {
+  margin-top: 3vh;
+  text-align: center;
+}
 .button-tarifa {
   background-color: white;
   border-radius: .5vh;
-  width: 30vw;
-  height: 5vh;
-  padding: 1vh;
+  width: auto;
+  height: auto;
+  padding: 2vh 3vh 2vh 3vh;
   border: 0;
+  align-self: center;
+}
+
+.button-tarifa:hover{
+  background-color: #97999B;
+  color: white;
 }
 
 .inputs-tarifa input{
@@ -455,6 +468,8 @@ header {
   height: 5vh;
   border: white solid .1vh;
   border-radius: 1vh;
+  padding: 1vh;
+  color: white;
 }
 
 .footer {
@@ -480,10 +495,6 @@ header {
   border-bottom: solid white .1vh;
 }
 
-.logo-footer img {
-  height: 13%;
-  width: 26%;
-}
 .info-footer {
   display: flex;
   flex-direction: row;
@@ -494,10 +505,14 @@ header {
   padding: 3vh 0 3vh 0;
 }
 
+.links-footer-desk {
+  display: none;
+}
+
 .links-footer li {
-  font-size: .6rem;
+  font-size: .7rem;
   list-style: none;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 .right-footer {
@@ -521,8 +536,8 @@ header {
 }
 
 .button-footer {
-  width: 60%;
-  height: 30%;
+  width: auto;
+  height: auto;
 }
 
 .name-footer {
@@ -627,6 +642,127 @@ header {
     width: 35%;
     text-align: center;
   }
+
+  .mobile-info{
+    display: none;
+    padding: 2vh 0 2vh 0;
+  }
+
+  .desk-info {
+    display: flex;
+    width: 80vw;
+    height: 95%;
+    border-top: white solid .1vh;
+    border-right: white solid .1vh;
+    border-bottom: white solid .1vh;
+    padding: 5vh;
+  }
+
+  .text-desk-info {
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    align-content: center;
+    padding: 5vh 0 5vh 20vh;
+  }
+
+  .conductor {
+    align-items: flex-end;
+  }
+  
+  .text-conductor {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    width: 30%;
+  }
+  
+  .button-conductor-1 {
+    background-color: #f7b617;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1vh;
+    border: 0;
+    border-radius: 1vh;
+    width: 20vw;
+    height: 5vh;
+  }
+
+  .tarifa {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 2rem;
+    padding: 5vh 15vh;
+    height: 70vh;
+  }
+  
+  .google-maps {
+    height: 55vh;
+    width: 35vw;
+  }
+  
+  .button-tarifa {
+    background-color: white;
+    border-radius: .5vh;
+    width: auto;
+    height: auto;
+    padding: 1.5vh;
+    border: 0;
+    align-self: center;
+    font-size: 1rem;
+  }
+  
+  .inputs-tarifa input{
+    width: 30vh;
+    height: auto;
+    padding: 1vh;
+    color: white;
+  }
+  
+  .tarifa-mob {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .footer {
+    height: 75vh;
+    padding: 10vh 15vh;
+  }
+
+  .links-footer-desk, .links-footer li {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    list-style: none;
+    line-height: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .links-footer, .links-desk {
+    padding: 0;
+    margin: 0;
+    top: 0;
+  }
+
+  .name-footer {
+    font-size: 1rem;
+  }
+
+  .info-footer {
+    padding: 0 2vh;
+    justify-content: space-around;
+  }
+
+  
+
+
 
 
 }

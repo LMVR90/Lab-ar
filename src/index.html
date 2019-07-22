@@ -54,7 +54,7 @@
                     </figure>
                     <button class="button-hero-1">Descarga el app</button>
                 </div>
-                <div class="disappear hero-desk">
+                <div class="hero-desk">
                     <h2>Disfruta del viaje</h2>
                     <h2>Eres dueña de tu tiempo</h2>
                     <br>
@@ -67,18 +67,40 @@
                 </div>                
             </section>
             <section name="informacion" class="informacion">
-                <div class="text-celular">
+                <div class="mobile-info">
+                    <div class="text-celular">
+                        <div>
+                            <h2>La nueva app</h2>
+                        </div>
+                        <br>               
+                        <figure class="celular">
+                            <img src="/Users/Marce/Desktop/Labcar/recursos/img/celular.png" alt="celular">
+                        </figure>
+                    </div>  
                     <div>
-                        <h2>La nueva app</h2>
+                        <p class="text-informacion">Llega a tu destino aún más rápido</p>
                     </div>
-                    <br>               
-                    <figure class="celular">
-                        <img src="/Users/Marce/Desktop/Labcar/recursos/img/celular.png" alt="celular">
-                    </figure>
-                </div>  
-                <div>
-                    <p class="text-informacion">Llega a tu destino aún más rápido</p>
-                </div>                    
+                </div>   
+                <div class="desk-info">
+                    <img src="/Users/Marce/Desktop/Labcar/recursos/img/celular.png" alt="celular">
+                    <div class="text-desk-info">
+                        <h2>Descarga la nueva app</h1>
+                        <br>
+                        <p>
+                            La versión actualizada de LabCar
+                            está llena de nuevas funciones para
+                            llegar a donde quieras aún más fácil
+                            y rápido.
+                        </p>
+                        <br>
+                        <p>
+                            Con solo tocar un botón, un auto
+                            llega justo a tu ubicación. Súbete y
+                            no te preocupes: tu conductor sabe
+                            exactamente a dónde ir.
+                        </p>
+                    </div>
+                </div>                   
             </section>
             <section name="conductor" class="conductor">
                 <div class="text-conductor">
@@ -90,19 +112,21 @@
                 </div>
             </section>    
             <section name="tarifa" class="tarifa">
-                <div class="text-tarifa">
-                    <h4>Tarifas</h4>
-                    <p>Consulta las tarifas LabCar aquí</p>
-                    <div class="inputs-tarifa">                       
-                        <form action="">
-                            <span><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/circulo.png" alt="Circulo"></span> <input class="input-tarifa" type="text" placeholder="" value="">
-                        </form>                
-                        <form action="">
-                            <span><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/flecha.png" alt="Flecha"></span> <input class="input-tarifa" type="text" placeholder="" value="">
-                        </form>
+                <div class="tarifa-mob">
+                    <div class="text-tarifa">
+                        <h4>Tarifas</h4>
+                        <p>Consulta las tarifas LabCar aquí</p>
+                        <div class="inputs-tarifa">                       
+                            <form action="">
+                                <span><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/circulo.png" alt="Circulo"></span> <input class="input-tarifa" type="text" placeholder="Ingrese su punto de partida" value="">
+                            </form>                
+                            <form action="">
+                                <span><img class="icons-tarifa" src="/Users/Marce/Desktop/Labcar/recursos/img/flecha.png" alt="Flecha"></span> <input class="input-tarifa" type="text" placeholder="Ingrese su destino" value="">
+                            </form>
+                        </div>
                     </div>
+                    <div class="button-tarifa-div"><button class="button-tarifa"><strong>¡TRAZAR RUTA!</strong></button></div>
                 </div>
-                <div class="button-tarifa-div"><button class="button-tarifa">¡TRAZAR RUTA!</button></div>
                 <div class="map" id="map">
                         <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.31430271102!2d-99.16454592372858!3d19.41981134185133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff41d4c73813%3A0xd1c6f4fcad149f54!2sLaboratoria+Coding!5e0!3m2!1sen!2smx!4v1563772612484!5m2!1sen!2smx" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
@@ -112,7 +136,7 @@
             <div class="logo-footer">
                 <figure>
                     <img src="/Users/Marce/Desktop/Labcar/recursos/img/logo-blanco.png" alt="Labcar">
-                </figure>
+                </figure>                
             </div>
             <div class="info-footer">
                 <div class="left-footer links-footer">
@@ -127,6 +151,18 @@
                         <li>Seguridad</li>
                     </ul>
                 </div>
+                <div class="links-desk">
+                    <ul class="links-footer-desk">
+                        <li>Oportunidades</li>
+                        <li>Nuestra historia</li>
+                        <li>API de LabCar</li>
+                        <li>Eventos</li>
+                        <li>Desarrolladores</li>
+                        <li>Servicios</li>
+                        <li>Laboratoria</li>
+                        <li>Coders</li>                           
+                    </ul>
+                </div>
                 <div class="right-footer">
                     <div class="social-footer">
                         <nav>
@@ -139,9 +175,9 @@
                     </div>
                     <br>
                     <div class="stores-footer">
-                        <button><img class="button-footer" src="/Users/Marce/Desktop/Labcar/recursos/img/google-play.png" alt=""></button>
+                        <img class="button-footer" src="/Users/Marce/Desktop/Labcar/recursos/img/google-play.png" alt="">
                         <br>
-                        <button><img class="button-footer" src="/Users/Marce/Desktop/Labcar/recursos/img/app-store.png" alt=""></button>
+                        <img class="button-footer" src="/Users/Marce/Desktop/Labcar/recursos/img/app-store.png" alt="">
                     </div>
                 </div>
             </div>
