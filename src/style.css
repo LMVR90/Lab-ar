@@ -45,9 +45,6 @@
     content: "\eaca";
   }
 
-.hero-desk {
-  display: none;
-}
 
 body {
   font-family: sans-serif;
@@ -58,6 +55,9 @@ header {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    position: fixed;
+    background-color: white;
+    width: 100%;
   }
 
 .logo {
@@ -163,7 +163,9 @@ header {
   z-index: 998;
   cursor: default;
 }
-
+.hero-desk {
+  display: none;
+}
 .hero {
     background-image: url('/Users/Marce/Desktop/Labcar/img/taxi.jpg');
     background-size: cover;
@@ -822,7 +824,9 @@ header {
     padding: 0 2vh;
     justify-content: space-around;
   }
-
+  .disappear {
+    display:none;
+  }
 }
 
 
