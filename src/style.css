@@ -165,7 +165,7 @@ header {
 }
 
 .hero {
-    background-image: url('/Users/Marce/Desktop/Labcar/recursos/img/taxi.jpg');
+    background-image: url('/Users/Marce/Desktop/Labcar/img/taxi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -365,7 +365,7 @@ header {
 }
 
 .conductor {
-  background-image: url('/Users/Marce/Desktop/Labcar/recursos/img/conduce.jpg');
+  background-image: url('/Users/Marce/Desktop/Labcar/img/conduce.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
