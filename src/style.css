@@ -309,6 +309,22 @@ header {
   text-decoration: underline;
 }
 
+.modal-registro {
+  position: fixed;
+  z-index: 99999999;
+  background: none;
+  transition: opacity 0.5s ease;
+}
+.modal-registro:target {
+  opacity: 1;
+  top: 0;
+}
+
+.modal-registro:target .content-modal-registro{
+  top: 30vh;
+  transition: top 0.35s ease;
+}
+
 .desk-info {
   display: none;
 }
